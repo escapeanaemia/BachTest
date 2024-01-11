@@ -24,12 +24,12 @@ members_per_team=$(( (len + num_teams - 1) / num_teams ))
 team_members_str=""
 for ((i=0; i<num_teams; i++)); do
     case $((i+1)) in
-        1) team_name="1️⃣ 1조 (조장: ) - "
-        2) team_name="2️⃣ 2조 (조장: ) - "
-        3) team_name="3️⃣ 3조 (조장: ) - "
-        4) team_name="4️⃣ 4조 (조장: ) - "
-        5) team_name="5️⃣ 5조 (조장: ) - "
-        6) team_name="6️⃣ 6조 (조장: ) - "
+        1) team_name="1️⃣ 1조 조장:  - "
+        2) team_name="2️⃣ 2조 조장:  - "
+        3) team_name="3️⃣ 3조 조장:  - "
+        4) team_name="4️⃣ 4조 조장:  - "
+        5) team_name="5️⃣ 5조 조장:  - "
+        6) team_name="6️⃣ 6조 조장:  - "
     team_members_str+="$team_name ${names[@]:i*members_per_team:members_per_team} |✨ "
 done
 # 정리된 문자열 출력
