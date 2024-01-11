@@ -1,10 +1,11 @@
 name: Random Teams
-
-on:
+on: 
+  schedule:
+    - cron: '*/5 * * * *'
   push:
     branches:
       - main
-
+  
 jobs:
   random-teams:
     runs-on: ubuntu-latest
