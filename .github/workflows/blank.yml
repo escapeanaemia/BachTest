@@ -34,7 +34,7 @@ jobs:
       uses: dacbd/create-issue-action@v1.2.1
       with:
         # Your Github PAT, defaults to actions token
-        token: ${{ github.token }}
+        token: ${{ secrets.TOKEN }}
         # Repo Owner, if not set implied by context.
         # owner: # optional
         # Repo or impiled by the current context
