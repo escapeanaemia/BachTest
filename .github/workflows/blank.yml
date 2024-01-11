@@ -1,7 +1,7 @@
 name: Random Teams
 on: 
   schedule:
-    - cron: '*/6 * * * *'
+    - cron: '0 22 * * 1-5'
     
 jobs:
   random-teams:
