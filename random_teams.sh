@@ -23,7 +23,7 @@ members_per_team=$(( (len + num_teams - 1) / num_teams ))
 # 각 조의 맴버를 문자열로 정리
 team_members_str=""
 for ((i=0; i<num_teams; i++)); do
-    team_members_str+="Team $((i+1)): ${names[@]:i*members_per_team:members_per_team}\n"
+    team_members_str+="Team $((i+1)): ${names[@]:i*members_per_team:members_per_team} | "
 done
 
 # 정리된 문자열 출력
