@@ -29,10 +29,7 @@ jobs:
       run: |
         echo "Team Members:"
         echo "${{ steps.random-teams.outputs.team_members_str }}"
-
-                - name: Create Github Issue
-  # You may pin to the exact commit or the version.
-  # uses: dacbd/create-issue-action@ba4d1c45cccf9c483f2720cefb40e437f0ee6f7d
+        
     - name: Create Issue
       uses: dacbd/create-issue-action@v1.2.1
       with:
